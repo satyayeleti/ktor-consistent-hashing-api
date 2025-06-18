@@ -1,0 +1,31 @@
+curl -X POST http://localhost:8080/keys \
+  -H "Content-Type: application/json" \
+  -d '{
+        "apple": {
+            "color": "red",
+            "cat": "fruit"
+        },
+        "mango": {
+          "color": "yellow",
+          "cat": "fruit"
+        }
+      }'
+curl -X POST http://localhost:8080/keys \
+  -H "Content-Type: application/json" \
+  -d '{
+        "key3": {
+          "owner": "satya",
+          "region": "india"
+        },
+        "key4": {
+          "owner": "dev",
+          "region": "us"
+        }
+      }'
+
+curl -X POST http://localhost:8080/nodes \
+  -H "Content-Type: application/json" \
+  -d 'node1'
+
+curl -X DELETE http://localhost:8080/nodes/node1
+
