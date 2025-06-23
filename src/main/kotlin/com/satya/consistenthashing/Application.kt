@@ -1,4 +1,4 @@
-package com.example.consistenthashing
+package com.satya.consistenthashing
 
 import com.example.consistenthashing.routes.registerRoutes
 import com.example.consistenthashing.service.ConsistentHashingService
